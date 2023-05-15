@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>CFA_Scraper</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+    <PackageReference Include="PuppeteerSharp" Version="10.0.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.9.1" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+</Project>
